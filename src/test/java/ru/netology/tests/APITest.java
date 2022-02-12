@@ -1,6 +1,7 @@
 package ru.netology.tests;
 
 import lombok.val;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -10,7 +11,7 @@ import static ru.netology.data.DataHelper.getDeclinedNumber;
 
 public class APITest {
 
-    //Олата валидной картой, статус карты APPROVED
+    @DisplayName("Оплата валидной картой, статус карты APPROVED")
     @Test
     void shouldStatusPayWithValidApprovedCardNumber() {
         val validApprovedCardNumber = getApprovedNumber();
@@ -18,7 +19,7 @@ public class APITest {
         assertTrue(status.contains("APPROVED"));
     }
 
-    //Олата невалидной картой, статус карты DECLINED
+    @DisplayName("Оплата невалидной картой, статус карты DECLINED")
     @Test
     void shouldStatusPayWithValidDeclinedCardNumber() {
         val validDeclinedCardNumber = getDeclinedNumber();
@@ -26,7 +27,7 @@ public class APITest {
         assertTrue(status.contains("DECLINED"));
     }
 
-    //Олата валидной картой в кредит, статус карты APPROVED
+    @DisplayName("Оплата валидной картой в кредит, статус карты APPROVED")
     @Test
     void shouldStatusPayWithCreditValidApprovedCardNumber() {
         val validApprovedCardNumber = getApprovedNumber();
@@ -34,7 +35,7 @@ public class APITest {
         assertTrue(status.contains("APPROVED"));
     }
 
-    //Олата невалидной картой в кредит, статус карты DECLINED
+    @DisplayName("Оплата невалидной картой в кредит, статус карты DECLINED")
     @Test
     void shouldStatusPayWithCreditValidDeclinedCardNumber() {
         val validDeclinedCardNumber = getDeclinedNumber();
