@@ -144,7 +144,7 @@ public class PayByCardTests extends BaseUITest {
         purchasePage.incorrectFormatError();
     }
 
-    //  (тест не прошел, ошибка Неверный формат, а не Поле обязательно для заполнения)
+    //  (тест прошел)
     @DisplayName("Пустое поле Год")
     @Test
     public void shouldHaveEmptyYear() {
@@ -153,7 +153,7 @@ public class PayByCardTests extends BaseUITest {
         purchasePage.emptyFieldError();
     }
 
-    // Истек срок действия карты (тест не прошел, неверная ошибка "Неверно указан срок действия карты" вместо
+    // Истек срок действия карты (тест прошел)
     @DisplayName("Истек срок действия карты")
     @Test
     public void shouldHaveYearBeforeCurrentYear() {
