@@ -10,32 +10,6 @@
 
 ## Итоги тестирования
 
-### *При подключении к БД MySQL*
-![Allure Report SQL](https://user-images.githubusercontent.com/80194369/127530290-504f0a55-4779-4aa4-bf69-3c19de57e20e.png)
-
-- Успешных кейсов 50% (30 кейсов)
-- Неуспешных кейсов 50% (30 кейсов)
-
-![Allure Report SQL 2](https://user-images.githubusercontent.com/80194369/127530722-97930ae5-1250-4293-a79e-2c6a4bea86d1.png)
-![Allure Report SQL 3](https://user-images.githubusercontent.com/80194369/127530729-d0e65291-bcbe-421f-b7c9-b2ab124231fb.png)
-![Allure Report SQL 4](https://user-images.githubusercontent.com/80194369/127530736-0382d3c1-29f9-4960-bc94-1f1d83e928e9.png)
-![Allure Report SQL 5](https://user-images.githubusercontent.com/80194369/127530743-76a4f858-9287-48ff-b31a-125115857258.png)
-![Allure Report SQL Api](https://user-images.githubusercontent.com/80194369/127530756-7240fa2f-44b9-4572-bb42-92c1313594fd.png)
-
----
-
-### *При подключении к БД PostgreSQL*
-![Allure Report PostgreSQL](https://user-images.githubusercontent.com/80194369/127533181-4e984e9a-61e1-487c-b705-dcbe37f64c97.png)
-
-- Успешных кейсов 44,66% (28 кейсов)
-- Неуспешных кейсов 55,34% (32 кейса)
-
-![Allure Report PostgreSQL 1](https://user-images.githubusercontent.com/80194369/127534281-76bbafde-a75b-4da8-b10b-a511078a2021.png)
-![Allure Report PostgreSQL 2](https://user-images.githubusercontent.com/80194369/127534288-6a63f77f-e3d6-4868-9e00-664e9ea5fbd3.png)
-![Allure Report PostgreSQL 3](https://user-images.githubusercontent.com/80194369/127534292-0bf4d91b-6b4d-4400-a77a-1f5626446d77.png)
-![Allure Report PostgreSQL 4](https://user-images.githubusercontent.com/80194369/127534294-fd948649-e290-420a-be53-d3e4a61cc4e7.png)
-![Allure Report PostgreSQL Api](https://user-images.githubusercontent.com/80194369/127534296-17c921a4-98cb-49a9-ae6f-9bd026f293d3.png)
-
 ---
 ## Общие рекомендации
 
