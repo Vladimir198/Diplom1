@@ -1,7 +1,6 @@
 package ru.netology.pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
@@ -9,16 +8,14 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.*;
 
 public class PurchasePage {
 
     private final SelenideElement numberField = $("input[placeholder='0000 0000 0000 0000']");
     private final SelenideElement monthField = $("input[placeholder='08']");
     private final SelenideElement yearField = $("input[placeholder='22']");
-    private final ElementsCollection fieldSet = $$(".input__control");
-    private final SelenideElement holderField = fieldSet.get(3);
+    private final SelenideElement holderField = $x("//span[text()='Владелец']/parent::span/span/input");
     private final SelenideElement cvcCodeField = $("input[placeholder='999']");
 
     private final SelenideElement emptyField = $(byText("Поле обязательно для заполнения"));

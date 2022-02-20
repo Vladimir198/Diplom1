@@ -19,7 +19,7 @@ import static ru.netology.data.SQLHelper.*;
 //gradle test -Ddb.url=jdbc:mysql://localhost:3306/app allureReport
 //gradle test -Ddb.url=jdbc:mysql://localhost:3306/app allureServe
 //java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar artifacts/aqa-shop.jar
-//java -Dspring.datasource-postgresql.url=jdbc:postgresql://localhost:5432/app -jar artifacts/aqa-shop.jar
+//java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar artifacts/aqa-shop.jar
 //gradlew test -Ddb.url=jdbc:postgresql://localhost:5432/app allureServe
 
 public class PayByCardTests extends BaseUITest {
@@ -92,7 +92,8 @@ public class PayByCardTests extends BaseUITest {
         purchasePage.incorrectFormatError();
     }
 
-    @DisplayName("Оплата картой, которой нет в БД (тест прошел)")
+    // (тест прошел)
+    @DisplayName("Оплата картой, которой нет в БД")
     @Test
     public void shouldHaveNumberIfOutOfBase() {
         val cardData = getNumberIfNotExistInBase();
